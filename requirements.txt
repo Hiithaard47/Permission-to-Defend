@@ -3,3 +3,5 @@ uvicorn
 requests
 beautifulsoup4
 google-genai
+google-play-scraper
+python-dotenv
