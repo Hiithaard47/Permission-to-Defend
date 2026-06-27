@@ -2,6 +2,8 @@
 
 Deployment link: https://permission-to-defend.vercel.app/
 
+![alt text](https://github.com/Hiithaard47/Permission-to-Defend/blob/main/Permission%20to%20Defend.png "Application Screenshot")
+
 Permission-to-Defend is an AI-powered privacy auditing tool for Android applications. It compares an application's requested permissions against its privacy policy to determine whether those permissions are properly disclosed and justified.
 
 The project is built around a simple idea: if an application requests access to sensitive data, its privacy policy should clearly explain why that access is required. Whenever those two don't align, it creates what this project refers to as a Privacy-Permission Mismatch.
