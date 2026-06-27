@@ -1,0 +1,11 @@
+# Environments
+venv/
+env/
+__pycache__/
+
+# Secrets
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
