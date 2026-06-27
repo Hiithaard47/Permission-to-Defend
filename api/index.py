@@ -1,6 +1,5 @@
 from fastapi import FastAPI, Request
 from fastapi import HTTPException, status
-from fastapi.responses import FileResponse
 from dotenv import load_dotenv
 from urllib.parse import urlparse, parse_qs
 from google_play_scraper import permissions
@@ -16,7 +15,6 @@ load_dotenv()
 
 # initializing FastAPI server
 app = FastAPI()
-
 
 # privacy policy and permissions ingestion request model
 class IngestRequest(BaseModel):
@@ -68,11 +66,6 @@ def url_extract(url:str) -> List[str]:
         return extracted
     except Exception as e:
         raise HTTPException(status_code=400, detail=f"Failed to scrape URL: {str(e)}")
-
-# serving the frontend
-@app.get("/")
-def serve_frontend():
-    return FileResponse("public/index.html")
 
 # for debugging purposes
 @app.get("/api/health")
